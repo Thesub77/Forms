@@ -1,7 +1,6 @@
-﻿
-namespace SeñasForms
+﻿namespace SeñasForms.Formularios
 {
-    partial class FrmInicio
+    partial class FrmTraducciones
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +28,17 @@ namespace SeñasForms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTraducciones));
             this.SuspendLayout();
             // 
-            // FrmInicio
+            // FrmTraducciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(314, 581);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmInicio";
-            this.Text = "FrmInicio";
-            this.Load += new System.EventHandler(this.FrmInicio_Load);
+            this.Name = "FrmTraducciones";
+            this.Text = "FrmRegistros";
             this.ResumeLayout(false);
 
         }

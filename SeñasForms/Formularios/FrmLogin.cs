@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SeñasForms.Formularios;
 
 namespace SeñasForms
 {
@@ -25,24 +26,34 @@ namespace SeñasForms
         private void button1_Click(object sender, EventArgs e)
         {
             string login = TxtGmail.Text;
-            string clv = TxtGmail.Text;
-            bool ingresar1 = false, ingresar2 = false;
+            string clv = TxtPass.Text;
+            bool correoCorrecto = false, passCorrecta = false;
 
             if (login.Length > 0)
             {
-                ingresar1 = true;
+                correoCorrecto = true;
             }
-            if(!ingresar1)
+            if (correoCorrecto == false)
             {
-                label3.Visible = true;
+                errorCorreo.Visible = true;
             }
             if (clv.Length > 0)
             {
-                ingresar2 = true;
+                passCorrecta = true;
             }
-            if(!ingresar2)
+            if (passCorrecta == false)
             {
-                label4.Visible = true;
+                errorPass.Visible = true;
+            }
+            if (login.Length > 0 && clv.Length > 0)
+            {
+                errorCorreo.Visible = false;
+                errorPass.Visible = false;
+
+                this.Hide();
+
+                FrmInterfazPrincipal Frm = new FrmInterfazPrincipal();
+                Frm.Show();
             }
            
         }

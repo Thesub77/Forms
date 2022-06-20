@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SeñasForms
+namespace SeñasForms.Formularios
 {
-    public partial class FrmInicio : Form
+    public partial class FrmTraducciones : Form
     {
-        public FrmInicio()
+        public FrmTraducciones()
         {
             InitializeComponent();
-        }
-
-        private void FrmInicio_Load(object sender, EventArgs e)
-        {
-            new FrmLogin();
-            Show();
         }
     }
 }

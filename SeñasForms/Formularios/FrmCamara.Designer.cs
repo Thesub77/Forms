@@ -1,7 +1,6 @@
-﻿
-namespace SeñasForms
+﻿namespace SeñasForms.Formularios
 {
-    partial class FrmInicio
+    partial class FrmCamara
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +28,10 @@ namespace SeñasForms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
-            this.SuspendLayout();
-            // 
-            // FrmInicio
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(314, 581);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmInicio";
-            this.Text = "FrmInicio";
-            this.Load += new System.EventHandler(this.FrmInicio_Load);
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "FrmCamara";
         }
 
         #endregion

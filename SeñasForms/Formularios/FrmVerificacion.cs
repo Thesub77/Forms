@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SeñasForms
+namespace SeñasForms.Formularios
 {
-    public partial class FrmInicio : Form
+    public partial class FrmVerificacion : Form
     {
-        public FrmInicio()
+        public FrmVerificacion()
         {
             InitializeComponent();
-        }
-
-        private void FrmInicio_Load(object sender, EventArgs e)
-        {
-            new FrmLogin();
-            Show();
         }
     }
 }

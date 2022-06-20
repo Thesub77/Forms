@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\FrmCamara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCamara.Designer.cs">
+      <DependentUpon>FrmCamara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmInterfazPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmInterfazPrincipal.Designer.cs">
+      <DependentUpon>FrmInterfazPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +71,17 @@
     <Compile Include="Formularios\FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmResgistro.cs">
+    <Compile Include="Formularios\FrmTraducciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmResgistro.Designer.cs">
-      <DependentUpon>FrmResgistro.cs</DependentUpon>
+    <Compile Include="Formularios\FrmTraducciones.Designer.cs">
+      <DependentUpon>FrmTraducciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmRegistro.Designer.cs">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmSlash.cs">
       <SubType>Form</SubType>
@@ -70,19 +89,34 @@
     <Compile Include="Formularios\FrmSlash.Designer.cs">
       <DependentUpon>FrmSlash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmVerificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmVerificacion.Designer.cs">
+      <DependentUpon>FrmVerificacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FrmInterfazPrincipal.resx">
+      <DependentUpon>FrmInterfazPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmResgistro.resx">
-      <DependentUpon>FrmResgistro.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmRegistro.resx">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmSlash.resx">
       <DependentUpon>FrmSlash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmTraducciones.resx">
+      <DependentUpon>FrmTraducciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmVerificacion.resx">
+      <DependentUpon>FrmVerificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

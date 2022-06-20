@@ -1,7 +1,6 @@
-﻿
-namespace SeñasForms
+﻿namespace SeñasForms.Formularios
 {
-    partial class FrmInicio
+    partial class FrmVerificacion
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +28,36 @@ namespace SeñasForms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVerificacion));
+            this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // FrmInicio
+            // TxtCodigo
+            // 
+            this.TxtCodigo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCodigo.Location = new System.Drawing.Point(63, 254);
+            this.TxtCodigo.MaxLength = 6;
+            this.TxtCodigo.Name = "TxtCodigo";
+            this.TxtCodigo.Size = new System.Drawing.Size(200, 26);
+            this.TxtCodigo.TabIndex = 0;
+            this.TxtCodigo.WordWrap = false;
+            // 
+            // FrmVerificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(314, 581);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmInicio";
-            this.Text = "FrmInicio";
-            this.Load += new System.EventHandler(this.FrmInicio_Load);
+            this.Controls.Add(this.TxtCodigo);
+            this.Name = "FrmVerificacion";
+            this.Text = "FrmVerificacion";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox TxtCodigo;
     }
 }

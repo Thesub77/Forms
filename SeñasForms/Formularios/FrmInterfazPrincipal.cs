@@ -10,24 +10,27 @@ using System.Windows.Forms;
 
 namespace SeñasForms.Formularios
 {
-    public partial class FrmSlash : Form
+    public partial class FrmInterfazPrincipal : Form
     {
-        public FrmSlash()
+        public FrmInterfazPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void FrmInterfazPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmLogin Frm = new FrmLogin();
-            Frm.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FrmRegistro Frm = new FrmRegistro();
+            FrmTraducciones Frm = new FrmTraducciones();
             Frm.Show();
         }
     }

@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace SeñasForms.Formularios
 {
-    public partial class FrmResgistro : Form
+    public partial class FrmRegistro : Form
     {
-        public FrmResgistro()
+        public FrmRegistro()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmVerificacion Frm = new FrmVerificacion();
+            Frm.Show();
         }
     }
 }
