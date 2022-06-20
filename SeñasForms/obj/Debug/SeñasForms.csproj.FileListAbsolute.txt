@@ -1,0 +1,13 @@
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\bin\Debug\SeñasForms.exe.config
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\bin\Debug\SeñasForms.exe
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\bin\Debug\SeñasForms.pdb
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.csproj.AssemblyReference.cache
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.Properties.Resources.resources
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.csproj.GenerateResource.cache
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.csproj.CoreCompileInputs.cache
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.exe
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.pdb
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.FrmLogin.resources
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.FrmInicio.resources
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.Formularios.FrmResgistro.resources
+C:\Users\MLB13\source\repos\SeñasForms\SeñasForms\obj\Debug\SeñasForms.Formularios.FrmSlash.resources
