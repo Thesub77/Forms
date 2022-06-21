@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SeñasForms.Formularios;
+using System.IO;
 
 namespace SeñasForms
 {
@@ -45,17 +46,27 @@ namespace SeñasForms
             {
                 errorPass.Visible = true;
             }
-            if (login.Length > 0 && clv.Length > 0)
-            {
-                errorCorreo.Visible = false;
-                errorPass.Visible = false;
+            try { 
+                if (correoCorrecto == true && passCorrecta == true)
+                {
+                    TextReader sign_in = new StreamReader (TxtGmail.Text + ".txt");
+                    sign_in.Close();
 
-                this.Hide();
+                    if (sign_in.ReadLine() == TxtPass.Text)
+                    {
+                        MessageBox.Show("Ha iniciado sesión correctamente!");
 
-                FrmInterfazPrincipal Frm = new FrmInterfazPrincipal();
-                Frm.Show();
+                        this.Hide();
+                        FrmInterfazPrincipal Frm = new FrmInterfazPrincipal();
+                        Frm.Show();
+                    }
+                }
+
             }
-           
+            catch (Exception y)
+            {
+                MessageBox.Show("Error al iniciar sesión" + "Nombre del error: " + y);
+            }
         }
     }
 }

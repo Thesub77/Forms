@@ -142,8 +142,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Archvios\" />
-    <Folder Include="Iconos\" />
+    <Folder Include="Archivos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled.jpg" />

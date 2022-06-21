@@ -36,11 +36,16 @@ namespace SeñasForms.Formularios
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Txtname = new System.Windows.Forms.TextBox();
+            this.Txtapellido = new System.Windows.Forms.TextBox();
+            this.Txtgmail = new System.Windows.Forms.TextBox();
+            this.Txtcontraseña = new System.Windows.Forms.TextBox();
+            this.TxtRpass = new System.Windows.Forms.TextBox();
+            this.errorname = new System.Windows.Forms.Label();
+            this.errorlastname = new System.Windows.Forms.Label();
+            this.errorcorreo = new System.Windows.Forms.Label();
+            this.errorpass = new System.Windows.Forms.Label();
+            this.errorrpass = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +53,7 @@ namespace SeñasForms.Formularios
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 124);
+            this.label1.Location = new System.Drawing.Point(36, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 18);
             this.label1.TabIndex = 0;
@@ -59,7 +64,7 @@ namespace SeñasForms.Formularios
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 193);
+            this.label2.Location = new System.Drawing.Point(36, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 18);
             this.label2.TabIndex = 1;
@@ -70,7 +75,7 @@ namespace SeñasForms.Formularios
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(61, 261);
+            this.label3.Location = new System.Drawing.Point(36, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 18);
             this.label3.TabIndex = 2;
@@ -81,7 +86,7 @@ namespace SeñasForms.Formularios
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 331);
+            this.label4.Location = new System.Drawing.Point(36, 332);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 18);
             this.label4.TabIndex = 3;
@@ -92,7 +97,7 @@ namespace SeñasForms.Formularios
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(61, 402);
+            this.label5.Location = new System.Drawing.Point(36, 403);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 18);
             this.label5.TabIndex = 5;
@@ -105,7 +110,7 @@ namespace SeñasForms.Formularios
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(95, 529);
+            this.button1.Location = new System.Drawing.Point(96, 503);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 30);
             this.button1.TabIndex = 6;
@@ -113,79 +118,144 @@ namespace SeñasForms.Formularios
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // Txtname
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(64, 145);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 19);
-            this.textBox1.TabIndex = 7;
+            this.Txtname.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Txtname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Txtname.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txtname.ForeColor = System.Drawing.Color.White;
+            this.Txtname.Location = new System.Drawing.Point(39, 146);
+            this.Txtname.Name = "Txtname";
+            this.Txtname.Size = new System.Drawing.Size(225, 19);
+            this.Txtname.TabIndex = 7;
             // 
-            // textBox2
+            // Txtapellido
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(64, 214);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 19);
-            this.textBox2.TabIndex = 8;
+            this.Txtapellido.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Txtapellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Txtapellido.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txtapellido.ForeColor = System.Drawing.Color.White;
+            this.Txtapellido.Location = new System.Drawing.Point(39, 215);
+            this.Txtapellido.Name = "Txtapellido";
+            this.Txtapellido.Size = new System.Drawing.Size(225, 19);
+            this.Txtapellido.TabIndex = 8;
             // 
-            // textBox3
+            // Txtgmail
             // 
-            this.textBox3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(64, 282);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 19);
-            this.textBox3.TabIndex = 9;
+            this.Txtgmail.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Txtgmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Txtgmail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txtgmail.ForeColor = System.Drawing.Color.White;
+            this.Txtgmail.Location = new System.Drawing.Point(39, 283);
+            this.Txtgmail.Name = "Txtgmail";
+            this.Txtgmail.Size = new System.Drawing.Size(225, 19);
+            this.Txtgmail.TabIndex = 9;
             // 
-            // textBox4
+            // Txtcontraseña
             // 
-            this.textBox4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(64, 352);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 19);
-            this.textBox4.TabIndex = 10;
+            this.Txtcontraseña.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Txtcontraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Txtcontraseña.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txtcontraseña.ForeColor = System.Drawing.Color.White;
+            this.Txtcontraseña.Location = new System.Drawing.Point(39, 353);
+            this.Txtcontraseña.Name = "Txtcontraseña";
+            this.Txtcontraseña.Size = new System.Drawing.Size(225, 19);
+            this.Txtcontraseña.TabIndex = 10;
             // 
-            // textBox5
+            // TxtRpass
             // 
-            this.textBox5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(64, 423);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(180, 19);
-            this.textBox5.TabIndex = 11;
+            this.TxtRpass.BackColor = System.Drawing.Color.DodgerBlue;
+            this.TxtRpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtRpass.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRpass.ForeColor = System.Drawing.Color.White;
+            this.TxtRpass.Location = new System.Drawing.Point(39, 424);
+            this.TxtRpass.Name = "TxtRpass";
+            this.TxtRpass.Size = new System.Drawing.Size(225, 19);
+            this.TxtRpass.TabIndex = 11;
             // 
-            // FrmResgistro
+            // errorname
+            // 
+            this.errorname.AutoSize = true;
+            this.errorname.BackColor = System.Drawing.Color.Transparent;
+            this.errorname.ForeColor = System.Drawing.Color.Red;
+            this.errorname.Location = new System.Drawing.Point(36, 168);
+            this.errorname.Name = "errorname";
+            this.errorname.Size = new System.Drawing.Size(83, 13);
+            this.errorname.TabIndex = 13;
+            this.errorname.Text = "Nombre inválido";
+            this.errorname.Visible = false;
+            // 
+            // errorlastname
+            // 
+            this.errorlastname.AutoSize = true;
+            this.errorlastname.BackColor = System.Drawing.Color.Transparent;
+            this.errorlastname.ForeColor = System.Drawing.Color.Red;
+            this.errorlastname.Location = new System.Drawing.Point(36, 237);
+            this.errorlastname.Name = "errorlastname";
+            this.errorlastname.Size = new System.Drawing.Size(83, 13);
+            this.errorlastname.TabIndex = 14;
+            this.errorlastname.Text = "Apellido inválido";
+            this.errorlastname.Visible = false;
+            // 
+            // errorcorreo
+            // 
+            this.errorcorreo.AutoSize = true;
+            this.errorcorreo.BackColor = System.Drawing.Color.Transparent;
+            this.errorcorreo.ForeColor = System.Drawing.Color.Red;
+            this.errorcorreo.Location = new System.Drawing.Point(37, 305);
+            this.errorcorreo.Name = "errorcorreo";
+            this.errorcorreo.Size = new System.Drawing.Size(88, 13);
+            this.errorcorreo.TabIndex = 15;
+            this.errorcorreo.Text = "Correo incorrecto";
+            this.errorcorreo.Visible = false;
+            // 
+            // errorpass
+            // 
+            this.errorpass.AutoSize = true;
+            this.errorpass.BackColor = System.Drawing.Color.Transparent;
+            this.errorpass.ForeColor = System.Drawing.Color.Red;
+            this.errorpass.Location = new System.Drawing.Point(36, 375);
+            this.errorpass.Name = "errorpass";
+            this.errorpass.Size = new System.Drawing.Size(229, 13);
+            this.errorpass.TabIndex = 16;
+            this.errorpass.Text = "Su contraseña debe tener más de 8 caracteres";
+            this.errorpass.Visible = false;
+            // 
+            // errorrpass
+            // 
+            this.errorrpass.AutoSize = true;
+            this.errorrpass.BackColor = System.Drawing.Color.Transparent;
+            this.errorrpass.ForeColor = System.Drawing.Color.Red;
+            this.errorrpass.Location = new System.Drawing.Point(36, 446);
+            this.errorrpass.Name = "errorrpass";
+            this.errorrpass.Size = new System.Drawing.Size(134, 13);
+            this.errorrpass.TabIndex = 17;
+            this.errorrpass.Text = "Su contraseña no coincide";
+            this.errorrpass.Visible = false;
+            // 
+            // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(314, 581);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.errorrpass);
+            this.Controls.Add(this.errorpass);
+            this.Controls.Add(this.errorcorreo);
+            this.Controls.Add(this.errorlastname);
+            this.Controls.Add(this.errorname);
+            this.Controls.Add(this.TxtRpass);
+            this.Controls.Add(this.Txtcontraseña);
+            this.Controls.Add(this.Txtgmail);
+            this.Controls.Add(this.Txtapellido);
+            this.Controls.Add(this.Txtname);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FrmResgistro";
+            this.Name = "FrmRegistro";
             this.Text = "FrmResgistro";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -200,10 +270,15 @@ namespace SeñasForms.Formularios
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Txtname;
+        private System.Windows.Forms.TextBox Txtapellido;
+        private System.Windows.Forms.TextBox Txtgmail;
+        private System.Windows.Forms.TextBox Txtcontraseña;
+        private System.Windows.Forms.TextBox TxtRpass;
+        private System.Windows.Forms.Label errorname;
+        private System.Windows.Forms.Label errorlastname;
+        private System.Windows.Forms.Label errorcorreo;
+        private System.Windows.Forms.Label errorpass;
+        private System.Windows.Forms.Label errorrpass;
     }
 }
