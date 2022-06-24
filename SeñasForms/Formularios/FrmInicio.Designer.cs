@@ -38,7 +38,6 @@ namespace SeñasForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(314, 581);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmInicio";
             this.Text = "FrmInicio";
             this.Load += new System.EventHandler(this.FrmInicio_Load);

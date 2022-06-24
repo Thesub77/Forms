@@ -33,5 +33,10 @@ namespace SeñasForms.Formularios
             FrmTraducciones Frm = new FrmTraducciones();
             Frm.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

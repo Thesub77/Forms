@@ -25,67 +25,53 @@ namespace SeñasForms.Formularios
             string correo = Txtgmail.Text;
             string pass = Txtcontraseña.Text;
             string rpass = TxtRpass.Text;
-            bool okname = false, oklastname = false, okcorreo = false, okpass = false, okrpass = false;
 
-            if (nombre.Length < 3)
+            if (string.IsNullOrWhiteSpace(nombre))
             {
                 errorname.Visible = true;
-            } 
-            else
-            {
-                okname = true;
-            }
-            if (lastname.Length < 3)
-            {
-                errorlastname.Visible = true;
             }
             else
             {
-                oklastname = true;
-            }
-            if (correo.Length < 5)
-            {
-                errorcorreo.Visible = true;
-            }
-            else
-            {
-                okcorreo = true;
-            }
-            if (pass.Length < 8)
-            {
-                errorpass.Visible = true;
-            }
-            else
-            {
-                okpass = true;
-            }
-            if (rpass != pass)
-            {
-                errorrpass.Visible = true;
-            }
-            else
-            {
-                okrpass = true;
-            }
-
-            try { 
-
-                if (okname == true && oklastname == true && okcorreo == true && okpass == true && okrpass == true)
+                if (string.IsNullOrWhiteSpace(lastname))
                 {
-                    TextWriter registro = new StreamWriter(@"C:\Users\erling\Forms\SeñasForms\Archivos\" + correo + ".txt");
-                    registro.WriteLine(pass);
-                    registro.Close();
-
-                    MessageBox.Show("Se ha registrado correctamente!");
+                    errorlastname.Visible = true;
                 }
+                else
+                {
+                    if (string.IsNullOrWhiteSpace(correo))
+                    {
+                        errorcorreo.Visible = true;
+                    }
+                    else
+                    {
+                        if (string.IsNullOrWhiteSpace(pass))
+                        {
+                            errorpass.Visible = true;
+                        }
+                        else
+                        {
+                            if (rpass != pass)
+                            {
+                                errorrpass.Visible = true;
+                            }
+                            else
+                            {
+                                try
+                                {
+                                    TextWriter registro = new StreamWriter(@"C:\Users\MLC03\Desktop\Forms\SeñasForms\Archivos\" + correo + ".txt");
+                                    registro.WriteLine(pass);
+                                    registro.Close();
 
-                    this.Hide();
-                    FrmVerificacion Frm = new FrmVerificacion();
-                    Frm.Show();
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show("Error al registrar" + x);
+                                    MessageBox.Show("Se ha registrado correctamente!");
+                                }
+                                catch
+                                {
+                                    MessageBox.Show("Se ha presentado un error al registrarse");
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

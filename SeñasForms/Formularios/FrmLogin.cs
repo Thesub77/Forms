@@ -28,45 +28,42 @@ namespace SeñasForms
         {
             string login = TxtGmail.Text;
             string clv = TxtPass.Text;
-            bool correoCorrecto = false, passCorrecta = false;
 
-            if (login.Length > 0)
-            {
-                correoCorrecto = true;
-            }
-            if (correoCorrecto == false)
+            if (string.IsNullOrWhiteSpace(login))
             {
                 errorCorreo.Visible = true;
             }
-            if (clv.Length > 0)
+            else
             {
-                passCorrecta = true;
-            }
-            if (passCorrecta == false)
-            {
-                errorPass.Visible = true;
-            }
-            try { 
-                if (correoCorrecto == true && passCorrecta == true)
+                if (string.IsNullOrWhiteSpace(clv))
                 {
-                    TextReader sign_in = new StreamReader (TxtGmail.Text + ".txt");
-                    sign_in.Close();
-
-                    if (sign_in.ReadLine() == TxtPass.Text)
-                    {
-                        MessageBox.Show("Ha iniciado sesión correctamente!");
-
-                        this.Hide();
-                        FrmInterfazPrincipal Frm = new FrmInterfazPrincipal();
-                        Frm.Show();
-                    }
+                    errorPass.Visible = true;
                 }
+                    try
+                    {
+                        TextReader sign_in = new StreamReader(login + ".txt");
+                        if (sign_in.ReadLine() == clv)
+                        {
+                            MessageBox.Show("Ha iniciado sesión correctamente!");
 
+                            this.Hide();
+                            FrmInterfazPrincipal Frm = new FrmInterfazPrincipal();
+                            Frm.Show();
+                        }
+                        
+
+                    }
+                    catch
+                    {
+                        TxtGmail.Text = "";
+                        TxtPass.Text = "";
+                        errorCorreo.Visible = false;
+                        errorPass.Visible = false;
+                        MessageBox.Show("Error al iniciar sesión, ingrese sus datos nuevamente.");
+                    }
+                
             }
-            catch (Exception y)
-            {
-                MessageBox.Show("Error al iniciar sesión" + "Nombre del error: " + y);
-            }
+            
         }
     }
 }

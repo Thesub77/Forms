@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\FrmArranque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmArranque.Designer.cs">
+      <DependentUpon>FrmArranque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmCamara.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FrmArranque.resx">
+      <DependentUpon>FrmArranque.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmInterfazPrincipal.resx">
       <DependentUpon>FrmInterfazPrincipal.cs</DependentUpon>
     </EmbeddedResource>

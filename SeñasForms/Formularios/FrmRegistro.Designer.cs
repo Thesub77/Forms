@@ -216,9 +216,9 @@ namespace SeñasForms.Formularios
             this.errorpass.ForeColor = System.Drawing.Color.Red;
             this.errorpass.Location = new System.Drawing.Point(36, 375);
             this.errorpass.Name = "errorpass";
-            this.errorpass.Size = new System.Drawing.Size(229, 13);
+            this.errorpass.Size = new System.Drawing.Size(151, 13);
             this.errorpass.TabIndex = 16;
-            this.errorpass.Text = "Su contraseña debe tener más de 8 caracteres";
+            this.errorpass.Text = "Por favor cree una contraseña";
             this.errorpass.Visible = false;
             // 
             // errorrpass
