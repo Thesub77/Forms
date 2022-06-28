@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SeñasForms.Formularios;
 
 namespace SeñasForms.Formularios
 {
@@ -22,6 +23,16 @@ namespace SeñasForms.Formularios
             FrmLogin Frm = new FrmLogin();
             Frm.MdiParent = this;
             Frm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cmn_menuPrincipal.Show();
+        }
+
+        private void Cmn_menuPrincipal_Opening(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

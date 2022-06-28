@@ -28,41 +28,33 @@ namespace SeñasForms
         {
             string login = TxtGmail.Text;
             string clv = TxtPass.Text;
+            bool formato = false;
 
             if (string.IsNullOrWhiteSpace(login))
             {
                 errorCorreo.Visible = true;
             }
+            if (string.IsNullOrWhiteSpace(clv))
+            {
+                errorPass.Visible = true;
+            }
             else
             {
-                if (string.IsNullOrWhiteSpace(clv))
-                {
-                    errorPass.Visible = true;
+                try { 
+                    var correo = new System.Net.Mail.MailAddress(login);
+                    formato = true;
                 }
-                    try
-                    {
-                        TextReader sign_in = new StreamReader(login + ".txt");
-                        if (sign_in.ReadLine() == clv)
-                        {
-                            MessageBox.Show("Ha iniciado sesión correctamente!");
-
-                            this.Hide();
-                            FrmInterfazPrincipal Frm = new FrmInterfazPrincipal();
-                            Frm.Show();
-                        }
-                        
-
-                    }
-                    catch
-                    {
-                        TxtGmail.Text = "";
-                        TxtPass.Text = "";
-                        errorCorreo.Visible = false;
-                        errorPass.Visible = false;
-                        MessageBox.Show("Error al iniciar sesión, ingrese sus datos nuevamente.");
-                    }
-                
+                catch
+                {
+                    TxtGmail.Text = ""; //Limpiando el control
+                    MessageBox.Show("Correo electronico incorrecto", "Formato de correo electronico no encontrado");
+                }
             }
+            if (formato == true)
+            {
+                MessageBox.Show("Ha iniciado sesión correctamente");
+            }
+
             
         }
     }

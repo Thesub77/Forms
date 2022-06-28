@@ -47,6 +47,7 @@ namespace SeñasForms.Formularios
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Cmn_menuPrincipal
             // 
@@ -56,6 +57,7 @@ namespace SeñasForms.Formularios
             this.reportarProblemaTecnicoToolStripMenuItem});
             this.Cmn_menuPrincipal.Name = "Cmn_menuPrincipal";
             this.Cmn_menuPrincipal.Size = new System.Drawing.Size(216, 92);
+            this.Cmn_menuPrincipal.Opening += new System.ComponentModel.CancelEventHandler(this.Cmn_menuPrincipal_Opening);
             // 
             // favoritosToolStripMenuItem
             // 
@@ -80,7 +82,7 @@ namespace SeñasForms.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 793);
+            this.ClientSize = new System.Drawing.Size(388, 749);
             this.Controls.Add(this.button1);
             this.IsMdiContainer = true;
             this.Name = "FrmArranque";
