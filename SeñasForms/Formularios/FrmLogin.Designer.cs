@@ -131,6 +131,7 @@ namespace SeñasForms
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtGmail);
             this.Controls.Add(this.TxtPass);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmLogin";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmLogin_Load);

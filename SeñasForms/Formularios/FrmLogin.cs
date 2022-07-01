@@ -30,11 +30,11 @@ namespace SeñasForms
             string clv = TxtPass.Text;
             bool formato = false;
 
-            if (string.IsNullOrWhiteSpace(login))
+            if (string.IsNullOrWhiteSpace(login)) //Revisamos si el campo está vacío
             {
                 errorCorreo.Visible = true;
             }
-            if (string.IsNullOrWhiteSpace(clv))
+            if (string.IsNullOrWhiteSpace(clv)) //Revisamos si el campo está vacío
             {
                 errorPass.Visible = true;
             }
@@ -52,10 +52,42 @@ namespace SeñasForms
             }
             if (formato == true)
             {
-                MessageBox.Show("Ha iniciado sesión correctamente");
-            }
+                string rutaBase = Directory.GetCurrentDirectory();
+                string rutaArch = rutaBase.Replace(@"\bin\Debug", @"\Archivos\Registros.txt");
+                string correo;
+                string pass;
+                bool busqueda = false;
+                bool busqueda2 = false;
+                StreamReader leer = new StreamReader(rutaArch);
+                correo = leer.ReadLine();
 
-            
+                while (!busqueda && correo != null)
+                {
+                    string[] valor = correo.Split(';');
+
+                    if (valor[2].Equals(TxtGmail.Text))
+                    {
+                        busqueda = true;
+                        FrmInterfazPrincipal principal = new FrmInterfazPrincipal();
+                        principal.MdiParent = this.MdiParent;
+                        principal.Show();
+                        this.Close();
+
+                    }
+                    else
+                    {
+                        correo = leer.ReadLine();
+                    }
+                }//Fin del while
+
+                
+
+                if (!busqueda)
+                {
+                    MessageBox.Show("Revise sus datos e intentelo nuevamente");
+                }
+                
+            }
         }
     }
 }

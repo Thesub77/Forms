@@ -34,5 +34,12 @@ namespace SeñasForms.Formularios
         {
 
         }
+
+        private void FrmArranque_Load(object sender, EventArgs e)
+        {
+            FrmLogin login = new FrmLogin();
+            login.MdiParent = this;
+            login.Show();
+        }
     }
 }

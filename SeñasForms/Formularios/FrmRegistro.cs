@@ -26,53 +26,57 @@ namespace SeñasForms.Formularios
             string pass = Txtcontraseña.Text;
             string rpass = TxtRpass.Text;
 
-            if (string.IsNullOrWhiteSpace(nombre))
+            if (string.IsNullOrWhiteSpace(nombre))//Revisamos si el campo esta vacio
             {
                 errorname.Visible = true;
             }
+            else if (string.IsNullOrWhiteSpace(lastname))// Revisamos si el campo esta vacio
+            {
+                errorlastname.Visible = true;
+            }
+            else if (string.IsNullOrWhiteSpace(correo))//Revisamos si el campo esta vacio
+            {
+                errorcorreo.Visible = true;
+            }
+            else if (string.IsNullOrWhiteSpace(pass))//Revisamos si el campo esta vacio
+            {
+                errorpass.Visible = true;
+            }
+            else if (string.IsNullOrWhiteSpace(pass))//Revisamos si el campo esta vacio
+            {
+                errorpass.Visible = true;
+            }
+            else if (rpass != pass)//Revisamos si el campo coincide con el de la contraseña
+            {
+                errorrpass.Visible = true;
+            }
             else
             {
-                if (string.IsNullOrWhiteSpace(lastname))
+                try
                 {
-                    errorlastname.Visible = true;
-                }
-                else
-                {
-                    if (string.IsNullOrWhiteSpace(correo))
-                    {
-                        errorcorreo.Visible = true;
-                    }
-                    else
-                    {
-                        if (string.IsNullOrWhiteSpace(pass))
-                        {
-                            errorpass.Visible = true;
-                        }
-                        else
-                        {
-                            if (rpass != pass)
-                            {
-                                errorrpass.Visible = true;
-                            }
-                            else
-                            {
-                                try
-                                {
-                                    TextWriter registro = new StreamWriter(@"C:\Users\MLC03\Desktop\Forms\SeñasForms\Archivos\" + correo + ".txt");
-                                    registro.WriteLine(pass);
-                                    registro.Close();
+                    FileStream fs; //Creamos un objeto para crear un archivo
+                    StreamWriter escribir; //Creamos un objeto para escribir en el archivo
+                    string linea; //Esta variable tomara todo lo que se ingrese
+                    string rutaBase = Directory.GetCurrentDirectory(); //Obtenemos la ruta actual de la aplicacion por defecto
+                    string rutaArch = rutaBase.Replace(@"\bin\Debug", @"\Archivos\Registros.txt"); //Reemplazamos esa ruta y colocamos donde queremos ese archivo
+                    fs = new FileStream(rutaArch, FileMode.Append); //Le damos un estado al archivo
 
-                                    MessageBox.Show("Se ha registrado correctamente!");
-                                }
-                                catch
-                                {
-                                    MessageBox.Show("Se ha presentado un error al registrarse");
-                                }
-                            }
-                        }
-                    }
+                    escribir = new StreamWriter(fs); //Abrimos el archivo para comenzar a escribir
+                    linea = Txtname.Text + ";"; //Lo que se escriba en cada campo se escribirá en el archivo separados por ;
+                    linea += Txtapellido.Text + ";";
+                    linea += Txtgmail.Text + ";";
+                    linea += Txtcontraseña.Text + ";";
+                    escribir.Write(linea); //Escribimos cada dato
+                    escribir.Close(); //Cerramos el onjeto para evitar errores
+
+                    MessageBox.Show("Los datos se han guardado correctamente!");
+                }
+                catch
+                {
+                    MessageBox.Show("Se ha presentado un error al registrarse");
                 }
             }
+
         }
     }
 }
