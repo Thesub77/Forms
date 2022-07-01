@@ -41,7 +41,7 @@ namespace SeñasForms
             else
             {
                 try { 
-                    var correo = new System.Net.Mail.MailAddress(login);
+                    var correo = new System.Net.Mail.MailAddress(login); //Comprobando el formato de orreo
                     formato = true;
                 }
                 catch
@@ -55,7 +55,6 @@ namespace SeñasForms
                 string rutaBase = Directory.GetCurrentDirectory();
                 string rutaArch = rutaBase.Replace(@"\bin\Debug", @"\Archivos\Registros.txt");
                 string correo;
-                string pass;
                 bool busqueda = false;
                 bool busqueda2 = false;
                 StreamReader leer = new StreamReader(rutaArch);
@@ -68,26 +67,47 @@ namespace SeñasForms
                     if (valor[2].Equals(TxtGmail.Text))
                     {
                         busqueda = true;
-                        FrmInterfazPrincipal principal = new FrmInterfazPrincipal();
-                        principal.MdiParent = this.MdiParent;
-                        principal.Show();
-                        this.Close();
-
                     }
                     else
                     {
                         correo = leer.ReadLine();
                     }
                 }//Fin del while
+                leer.Close();
 
-                
+                if (busqueda == true)
+                {
+                    StreamReader leer1 = new StreamReader(rutaArch);
+                    clv = leer1.ReadLine();
 
-                if (!busqueda)
+                    while (!busqueda2 && clv != null)
+                    {
+                        string[] valor = clv.Split(';');
+
+                        if (valor[3].Equals(TxtPass.Text))
+                        {
+                            busqueda2 = true;
+                        }
+                        else
+                        {
+                            clv = leer.ReadLine();
+                        }
+                    }//Fin del while
+                    leer1.Close();
+                }
+                if (busqueda == true && busqueda2 == true)
+                {
+                    FrmInterfazPrincipal principal = new FrmInterfazPrincipal();
+                    principal.MdiParent = this.MdiParent;
+                    principal.Show();
+                    this.Close();
+                }
+                if (!busqueda || !busqueda2)
                 {
                     MessageBox.Show("Revise sus datos e intentelo nuevamente");
                 }
                 
-            }
+            } //Fin del if
         }
     }
 }
