@@ -80,6 +80,7 @@ C:\Users\erling\OneDrive\Escritorio\Forms\SeñasForms\obj\Debug\SeñasForms.cspr
 C:\Users\erling\OneDrive\Escritorio\Forms\SeñasForms\obj\Debug\SeñasForms.csproj.CoreCompileInputs.cache
 C:\Users\erling\OneDrive\Escritorio\Forms\SeñasForms\obj\Debug\SeñasForms.exe
 C:\Users\erling\OneDrive\Escritorio\Forms\SeñasForms\obj\Debug\SeñasForms.pdb
+<<<<<<< HEAD
 E:\Serling usb\Integrador\sign_m proyecto\Forms\SeñasForms\bin\Debug\SeñasForms.exe.config
 E:\Serling usb\Integrador\sign_m proyecto\Forms\SeñasForms\bin\Debug\SeñasForms.exe
 E:\Serling usb\Integrador\sign_m proyecto\Forms\SeñasForms\bin\Debug\SeñasForms.pdb
@@ -135,3 +136,22 @@ C:\Users\erling\OneDrive\Escritorio\SIGN-M\Forms\SeñasForms\obj\Debug\SeñasFor
 C:\Users\erling\OneDrive\Escritorio\SIGN-M\Forms\SeñasForms\obj\Debug\SeñasForms.csproj.CoreCompileInputs.cache
 C:\Users\erling\OneDrive\Escritorio\SIGN-M\Forms\SeñasForms\obj\Debug\SeñasForms.exe
 C:\Users\erling\OneDrive\Escritorio\SIGN-M\Forms\SeñasForms\obj\Debug\SeñasForms.pdb
+=======
+C:\Users\Estudiante\Documents\Forms\SeñasForms\bin\Debug\SeñasForms.exe.config
+C:\Users\Estudiante\Documents\Forms\SeñasForms\bin\Debug\SeñasForms.exe
+C:\Users\Estudiante\Documents\Forms\SeñasForms\bin\Debug\SeñasForms.pdb
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.Formularios.FrmArranque.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.Formularios.FrmInterfazPrincipal.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.FrmLogin.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.FrmInicio.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.Formularios.FrmRegistro.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.Formularios.FrmSlash.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.Formularios.FrmTraducciones.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.Formularios.FrmVerificacion.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.Properties.Resources.resources
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.csproj.GenerateResource.cache
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.exe
+C:\Users\Estudiante\Documents\Forms\SeñasForms\obj\Debug\SeñasForms.pdb
+>>>>>>> 32cb9f9574e5a03d78885aafa1c1955f834de41e
