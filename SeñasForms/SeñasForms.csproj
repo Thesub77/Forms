@@ -95,16 +95,13 @@
     <Compile Include="Formularios\FrmSlash.Designer.cs">
       <DependentUpon>FrmSlash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmVerificacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FrmVerificacion.Designer.cs">
-      <DependentUpon>FrmVerificacion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmArranque.resx">
       <DependentUpon>FrmArranque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCamara.resx">
+      <DependentUpon>FrmCamara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmInterfazPrincipal.resx">
       <DependentUpon>FrmInterfazPrincipal.cs</DependentUpon>
@@ -123,9 +120,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmTraducciones.resx">
       <DependentUpon>FrmTraducciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmVerificacion.resx">
-      <DependentUpon>FrmVerificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

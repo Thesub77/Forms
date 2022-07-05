@@ -67,7 +67,7 @@ namespace SeñasForms.Formularios
                     linea += Txtgmail.Text + ";";
                     linea += Txtcontraseña.Text + ";";
                     escribir.Write(linea); //Escribimos cada dato
-                    escribir.Close(); //Cerramos el onjeto para evitar errores
+                    escribir.Close(); //Cerramos el objeto para evitar errores
 
                     MessageBox.Show("Los datos se han guardado correctamente!");
                 }

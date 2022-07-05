@@ -29,15 +29,24 @@ namespace SeñasForms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
+            this.TmrTranscision = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // TmrTranscision
+            // 
+            this.TmrTranscision.Enabled = true;
+            this.TmrTranscision.Interval = 5000;
+            this.TmrTranscision.Tick += new System.EventHandler(this.Timer_inicio);
             // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(314, 581);
+            this.ClientSize = new System.Drawing.Size(330, 640);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmInicio";
             this.Text = "FrmInicio";
             this.Load += new System.EventHandler(this.FrmInicio_Load);
@@ -46,5 +55,7 @@ namespace SeñasForms
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer TmrTranscision;
     }
 }

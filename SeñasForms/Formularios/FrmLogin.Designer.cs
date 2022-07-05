@@ -42,7 +42,7 @@ namespace SeñasForms
             // TxtPass
             // 
             this.TxtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPass.Location = new System.Drawing.Point(48, 295);
+            this.TxtPass.Location = new System.Drawing.Point(59, 292);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.PasswordChar = '*';
             this.TxtPass.Size = new System.Drawing.Size(220, 26);
@@ -51,7 +51,7 @@ namespace SeñasForms
             // TxtGmail
             // 
             this.TxtGmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtGmail.Location = new System.Drawing.Point(48, 202);
+            this.TxtGmail.Location = new System.Drawing.Point(59, 199);
             this.TxtGmail.Name = "TxtGmail";
             this.TxtGmail.Size = new System.Drawing.Size(220, 26);
             this.TxtGmail.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace SeñasForms
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(109, 391);
+            this.button1.Location = new System.Drawing.Point(120, 388);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 31);
             this.button1.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace SeñasForms
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 181);
+            this.label1.Location = new System.Drawing.Point(56, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 18);
             this.label1.TabIndex = 3;
@@ -88,7 +88,7 @@ namespace SeñasForms
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 272);
+            this.label2.Location = new System.Drawing.Point(55, 269);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 4;
@@ -99,7 +99,7 @@ namespace SeñasForms
             this.errorCorreo.AutoSize = true;
             this.errorCorreo.BackColor = System.Drawing.Color.Transparent;
             this.errorCorreo.ForeColor = System.Drawing.Color.Red;
-            this.errorCorreo.Location = new System.Drawing.Point(45, 231);
+            this.errorCorreo.Location = new System.Drawing.Point(56, 228);
             this.errorCorreo.Name = "errorCorreo";
             this.errorCorreo.Size = new System.Drawing.Size(135, 13);
             this.errorCorreo.TabIndex = 5;
@@ -111,7 +111,7 @@ namespace SeñasForms
             this.errorPass.AutoSize = true;
             this.errorPass.BackColor = System.Drawing.Color.Transparent;
             this.errorPass.ForeColor = System.Drawing.Color.Red;
-            this.errorPass.Location = new System.Drawing.Point(45, 324);
+            this.errorPass.Location = new System.Drawing.Point(56, 321);
             this.errorPass.Name = "errorPass";
             this.errorPass.Size = new System.Drawing.Size(157, 13);
             this.errorPass.TabIndex = 6;
@@ -123,7 +123,7 @@ namespace SeñasForms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(330, 620);
+            this.ClientSize = new System.Drawing.Size(330, 640);
             this.Controls.Add(this.errorPass);
             this.Controls.Add(this.errorCorreo);
             this.Controls.Add(this.label2);
@@ -131,7 +131,7 @@ namespace SeñasForms
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtGmail);
             this.Controls.Add(this.TxtPass);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmLogin_Load);

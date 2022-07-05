@@ -19,16 +19,25 @@ namespace SeñasForms.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmLogin Frm = new FrmLogin();
-            Frm.Show();
+            FrmLogin login = new FrmLogin();
+            login.MdiParent = this.MdiParent;
+            login.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmRegistro Frm = new FrmRegistro();
-            Frm.Show();
+            FrmRegistro registro = new FrmRegistro();
+            registro.MdiParent = this.MdiParent;
+            registro.Show();
+            this.Close();
         }
+
+        private void FrmSlash_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

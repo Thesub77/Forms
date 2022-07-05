@@ -30,39 +30,51 @@ namespace SeñasForms.Formularios
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSlash));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnLogin = new System.Windows.Forms.Button();
+            this.BtnSignUp = new System.Windows.Forms.Button();
+            this.PcbLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PcbLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(76, 228);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 41);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Iniciar Sesión";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnLogin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnLogin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.ForeColor = System.Drawing.Color.White;
+            this.BtnLogin.Location = new System.Drawing.Point(75, 356);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(166, 41);
+            this.BtnLogin.TabIndex = 0;
+            this.BtnLogin.Text = "Iniciar Sesión";
+            this.BtnLogin.UseVisualStyleBackColor = false;
+            this.BtnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // BtnSignUp
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(76, 345);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 41);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Registrarse";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnSignUp.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnSignUp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSignUp.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSignUp.ForeColor = System.Drawing.Color.White;
+            this.BtnSignUp.Location = new System.Drawing.Point(75, 424);
+            this.BtnSignUp.Name = "BtnSignUp";
+            this.BtnSignUp.Size = new System.Drawing.Size(166, 41);
+            this.BtnSignUp.TabIndex = 1;
+            this.BtnSignUp.Text = "Registrarse";
+            this.BtnSignUp.UseVisualStyleBackColor = false;
+            this.BtnSignUp.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // PcbLogo
+            // 
+            this.PcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("PcbLogo.Image")));
+            this.PcbLogo.Location = new System.Drawing.Point(84, 167);
+            this.PcbLogo.Name = "PcbLogo";
+            this.PcbLogo.Size = new System.Drawing.Size(145, 141);
+            this.PcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PcbLogo.TabIndex = 2;
+            this.PcbLogo.TabStop = false;
             // 
             // FrmSlash
             // 
@@ -70,17 +82,23 @@ namespace SeñasForms.Formularios
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(314, 581);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PcbLogo);
+            this.Controls.Add(this.BtnSignUp);
+            this.Controls.Add(this.BtnLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSlash";
             this.Text = "FrmSlash";
+            this.Load += new System.EventHandler(this.FrmSlash_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PcbLogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.Button BtnSignUp;
+        private System.Windows.Forms.PictureBox PcbLogo;
     }
 }

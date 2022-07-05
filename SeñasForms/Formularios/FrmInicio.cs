@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SeñasForms.Formularios;
 
 namespace SeñasForms
 {
@@ -19,8 +20,17 @@ namespace SeñasForms
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
-            new FrmLogin();
-            Show();
+            
+        }
+
+        private void Timer_inicio(object sender, EventArgs e)
+        {
+            FrmSlash slash = new FrmSlash();
+            slash.MdiParent = this.MdiParent;
+            slash.Show();
+            this.Close();
+            TmrTranscision.Enabled = false;
+
         }
     }
 }
